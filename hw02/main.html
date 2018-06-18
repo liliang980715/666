@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    
+<meta charset="UTF-8"> 
+<title>99乘法表</title> 
+<script type="text/javascript"> 
+document.write("<center><table border=0)>"); 
+ for (var i = 1; i < 10; i++) {  //控制行数,即从1行至9行               
+ document.write("<tr>");  //i每循环一次,形成一行               
+ for (var j = 1; j < 10; j++) {   //控制列数（行数增加时列数也随着增加）形成9行9列的效果                   
+ if (j <= i)                       
+ document.write("<td style='border:2px solid #004B8A; background: #FFFFFF;'>" + i + "*" + j + "=" + (i *j) + "</td>");  //行数乘以列数得两数之积                   
+ else                       
+ document.write("<td style='border:none;'></td>"); //列不小于行 输出行列           
+      }              
+  document.write("</tr>");          
+    }         
+   document.write("</table>");
+</script> 
+</body> 
+</html> 
